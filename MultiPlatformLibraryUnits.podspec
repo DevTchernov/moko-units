@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'MultiPlatformLibraryUnits'
-    spec.version                  = '0.1.0'
+    spec.version                  = '0.2.0'
     spec.homepage                 = 'https://github.com/icerockdev/moko-units'
     spec.source                   = { :git => "https://github.com/icerockdev/moko-units.git", :tag => "release/#{spec.version}" }
     spec.authors                  = 'IceRock Development'
@@ -8,6 +8,7 @@ Pod::Spec.new do |spec|
     spec.summary                  = 'Swift additions to moko-units Kotlin/Native library'
     spec.module_name              = "#{spec.name}"
     
+    spec.static_framework = true
     spec.dependency 'MultiPlatformLibrary'
 
     spec.ios.deployment_target  = '9.0'
